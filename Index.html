@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lavanderia stoped</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .banner-container {
+            width: 90%;
+            max-width: 500px;
+            background-color: #ffcccb;
+            color: #333;
+            border: 2px solid #ff6b6b;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .banner-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d80027;
+            margin-bottom: 15px;
+        }
+
+        .banner-message {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .banner-close {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #d80027;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .banner-close:hover {
+            background-color: #ff4e4e;
+        }
+    </style>
+    <script>
+        function closeBanner() {
+            document.querySelector('.banner-container').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="banner-container">
+        <div class="banner-title">Avisos</div>
+        <div class="banner-message">
+            Não foi possível concluir a tabela, falta de organização e compromisso com horários dos responsáveis por entrega de Lençóis.
+        </div>
+        <button class="banner-close" onclick="closeBanner()">Fechar</button>
+    </div>
+</body>
+</html>
